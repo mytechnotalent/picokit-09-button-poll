@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-09-button-poll",
+  "eyebrow": "PICOKIT // LESSON 09",
+  "title": "PICOKIT // BUTTON POLL",
+  "subtitle": "TACTILE BUTTON POLL AND AUTHENTICATED HEARTBEAT",
+  "accent": "#47F7FF",
+  "dim": "#2C999E",
+  "white": "#DAF5FF",
+  "cyan": "#7FD8E0",
+  "bg": "#041111",
+  "bg_edge": "#010405",
+  "icon": "button",
+  "panel_status": "BUTTON 1  ·  LAMPS ALL ON  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "INPUT",
+      "value": "GP15"
+    },
+    {
+      "label": "STATE",
+      "value": "pressed"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-41 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00009  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] button poll b=1  lamps all on  onboard blink",
+    "[+] ack sent  rssi -41  snr 8.4"
+  ],
+  "categories": [
+    "BUTTON",
+    "STATE",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "POLL-01",
+      "label": "released",
+      "value": "chase"
+    },
+    {
+      "tag": "POLL-02",
+      "label": "pressed",
+      "value": "all on"
+    },
+    {
+      "tag": "POLL-03",
+      "label": "period",
+      "value": "200 ms"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ POLL ]=="
+  ],
+  "layout": "stat",
+  "stat": "3/3"
+}
